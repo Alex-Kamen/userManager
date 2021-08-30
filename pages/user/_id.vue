@@ -5,27 +5,27 @@
     <div class="userData">
       <div v-if="!userIsEdit" class="userInfo">
         <div>
-          <span>Name: </span>
+          <span>Имя: </span>
           <span>{{userInfo.name}}</span>
         </div>
         <div>
-          <span>Surname: </span>
+          <span>Фамилия: </span>
           <span>{{userInfo.surname}}</span>
         </div>
         <div>
-          <span>age: </span>
+          <span>Возраст: </span>
           <span>{{userInfo.age}}</span>
         </div>
         <div>
-          <span>Login: </span>
+          <span>Логин: </span>
           <span>{{userInfo.login}}</span>
         </div>
         <div>
-          <span>Password: </span>
+          <span>Пароль: </span>
           <span>{{userInfo.password}}</span>
         </div>
         <div>
-          <span>Location: </span>
+          <span>Город: </span>
           <span>{{userInfo.location}}</span>
         </div>
         <div>
@@ -33,7 +33,7 @@
           <span>{{userInfo.email}}</span>
         </div>
         <div>
-          <span>Sex: </span>
+          <span>Пол: </span>
           <span>{{userInfo.sex}}</span>
         </div>
       </div>

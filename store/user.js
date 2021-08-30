@@ -27,11 +27,12 @@ export const mutations = {
 
 export const actions = {
   fetchUserList({commit}) {
-    const userList = JSON.parse(localStorage.getItem('userList'))
+    const userList = JSON.parse(localStorage.getItem('userList')) || []
     commit('setUserList', userList)
   },
   fetchUser({commit}, userId) {
-    const userList = JSON.parse(localStorage.getItem('userList'))
+    const userList = JSON.parse(localStorage.getItem('userList')) || []
+
     for(let i = 0; i < userList.length; i++) {
       if(userList[i].id == userId) {
         commit('setUser', userList[i])
